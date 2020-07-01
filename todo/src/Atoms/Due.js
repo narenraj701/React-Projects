@@ -1,5 +1,6 @@
 import React from 'react';
+import Typography from '@material-ui/core/Typography';
 
-const Due=({due})=><h4 style={{color:"grey"}}>Due by : {due}</h4> ;
+const Due = ({ due }) => <Typography color="textSecondary" gutterBottom>{due}</Typography>;
 
 export default Due;

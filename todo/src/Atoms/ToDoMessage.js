@@ -1,10 +1,10 @@
 import React from 'react';
-
-const ToDoMessage=(props)=>{
+import Typography from '@material-ui/core/Typography';
+const ToDoMessage = (props) => {
     //console.log(props);
-    let display=<h2>{props.message}</h2>;
-    if(props.finished){
-        display=<h2 style={{textDecoration:'line-through'}}>{props.message}</h2>;
+    let display = <Typography variant="h4">{props.message}</Typography>;
+    if (props.finished) {
+        display = <Typography variant="h4" style={{ textDecoration: 'line-through' }}>{props.message}</Typography>;
     }
     return <div>{display}</div>
 }
