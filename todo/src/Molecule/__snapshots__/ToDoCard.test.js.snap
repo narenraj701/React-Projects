@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Match the snapshot - Due message 1`] = `
+<div
+  className="MuiPaper-root MuiCard-root makeStyles-root-1 MuiPaper-elevation1 MuiPaper-rounded"
+>
+  <div
+    className="MuiCardContent-root"
+  >
+    <div
+      data-testid="message"
+    >
+      Message Component
+    </div>
+    <div
+      data-testid="duemessage"
+    >
+      DueMessage Component
+    </div>
+  </div>
+  <div
+    className="MuiCardActions-root makeStyles-position-2 MuiCardActions-spacing"
+  >
+    <div
+      data-testid="markbutton"
+    >
+      MarkButton Component
+    </div>
+    <div
+      data-testid="deletebutton"
+    >
+      deletebutton Component
+    </div>
+  </div>
+</div>
+`;

@@ -33,7 +33,7 @@ const ToDoCard = (props) => {
     return (
         <Card className={classes.root}>
             <CardContent >
-                <Message message={props.message} finished={props.completed} />
+                <Message data-testid="message" message={props.message} finished={props.completed} />
                 <Due due={props.due} />
             </CardContent>
             <CardActions className={classes.position}>

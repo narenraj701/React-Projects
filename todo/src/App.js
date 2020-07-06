@@ -7,9 +7,8 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
-import { Link } from '@material-ui/core';
-
-const useStyles = makeStyles((theme) => ({
+import { Link } from 'react-router-dom';
+const useStyles = makeStyles( ({
   root: {
     flexGrow: 1,
   },
@@ -22,15 +21,13 @@ const useStyles = makeStyles((theme) => ({
       fontSize:'30px'
     }
   },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
   appstyle:{
     alignItems:'center'
   }
 }));
 
 const App=()=> {
+  
   const classes=useStyles();
   const [state,setState] = useState({ items: null ,error:false});
   useEffect(()=>{
@@ -95,15 +92,16 @@ const App=()=> {
           disableit={() => handleCompleted(item.id)}
           delete={() => deleteHandler(item.id)} />
       )};
-    return (<div className={classes.root}>
+    return (
+    <div className={classes.root}>
         <AppBar position="static" className={classes.appstyle}>
           <Toolbar >
-            <Link href="/" variant='string' >
+            <Link to="/" >
             <Typography variant='h6' color='inherit' className={classes.linkstyle}>
               ToDoList
             </Typography>
             </Link>
-            <Link href="/addPost" variant='string'>
+            <Link to="/addPost" >
             <Typography variant='h6' color='inherit' className={classes.linkstyle}>
               AddToDo
             </Typography>

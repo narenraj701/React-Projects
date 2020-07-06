@@ -40,9 +40,9 @@ const AddToDo=(props)=>{
     }
     
     return <div className={classes.position}>
-        <Typography variant='h3'>Add A To Do</Typography>
-        <input type='text' placeholder='enter a to do task' className={classes.inputstyle}  onChange={(event)=>setMessage(event.target.value)} /><br /><br />
-        <input type='text' placeholder='enter due date'  className={classes.inputstyle} onChange={(event)=>setDate(event.target.value)}/><br /><br />
+        <Typography variant='h3' >Add A To Do</Typography>
+        <input type='text' required placeholder='enter a to do task' className={classes.inputstyle}  onChange={(event)=>setMessage(event.target.value)} /><br /><br />
+        <input type='text' required placeholder='enter due date'  className={classes.inputstyle} onChange={(event)=>setDate(event.target.value)}/><br /><br />
         <Button  className={classes.root} onClick={postHandler} message={message} date={date}>Submit</Button>
     </div> 
 }
