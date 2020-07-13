@@ -1,7 +1,7 @@
 import React, { useEffect,useState } from 'react';
 import axios from 'axios';
-import ToDoCard from './Molecule/ToDoCard';
-import AddToDo from './Organisms/AddToDo';
+import ToDoCard from './Molecule/ToDoCard/ToDoCard';
+import AddToDo from './Organisms/AddToDo/AddToDo';
 import {Route} from 'react-router-dom';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
